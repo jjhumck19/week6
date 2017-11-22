@@ -113,18 +113,18 @@ coffee.brand = 'Maxwell House'
 coffee.flavor = 'Amaretto'
 coffee.cupsize = 'small'
 coffee.price = 4.50
-table_service.insert_entity('itemstable', clothing)
+table_service.insert_entity('itemstable', coffee)
 print('Created entry for a Maxwell House...\n')
 time.sleep(1)
 
-offee = Entity()
+coffee = Entity()
 coffee.PartitionKey = 'coffeemenu'
 coffee.RowKey = '005'
 coffee.brand = 'Folgers'
 coffee.flavor = 'Chocolate'
 coffee.cupsize = 'large'
 coffee.price = 4.50
-table_service.insert_entity('itemstable', clothing)
+table_service.insert_entity('itemstable', coffee)
 print('Created entry for a Folgers...\n')
 time.sleep(1)
 
