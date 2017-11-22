@@ -20,6 +20,7 @@ if response.status_code == 200 or response.status_code == 201:
 else:
     print('Error creating resource group')
 
+
 # Create a storage account for our demo
 response = azurerm.create_storage_account(auth_token, subscription_id, resourcegroup_name, storageaccount_name,  location, storage_type='Standard_LRS')
 if response.status_code == 202:
@@ -27,7 +28,6 @@ if response.status_code == 202:
     time.sleep(2)
 else:
     print('Error creating storage account')
-
 
 ###
 # Use the Azure Storage Storage SDK for Python to create a Table
@@ -72,7 +72,7 @@ car.PartitionKey = 'carlist'
 car.RowKey = '001'
 car.maker = 'Toyota'
 car.model = 'RAV4'
-Car.year = '2017'
+car.year = '2017'
 car.color = 'Black'
 car.price = 26000.00
 table_service.insert_entity('itemstable', car)
@@ -83,7 +83,7 @@ car.PartitionKey = 'carlist'
 car.RowKey = '002'
 car.maker = 'Toyota'
 car.model = '4RUNER'
-Car.year = '2018'
+car.year = '2018'
 car.color = 'Black'
 car.price = 38000.00
 table_service.insert_entity('itemstable', car)
@@ -94,7 +94,7 @@ car.PartitionKey = 'carlist'
 car.RowKey = '003'
 car.maker = 'Honda'
 car.model = 'CRV'
-Car.year = '2017'
+car.year = '2017'
 car.color = 'Black'
 car.price = 28000.00
 table_service.insert_entity('itemstable', car)

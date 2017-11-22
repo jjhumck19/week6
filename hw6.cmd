@@ -18,3 +18,6 @@ az storage blob upload --container-name jhustoragecontainer --name jhublob --fil
 
 
 az storage blob upload --container-name jhustoragecontainer --account-key CvSNm9qPnhRjbWOiz59ZX2GZFRfzhDwkJmGcHCC5qrqGi87E08eQ89E5JYUpO5ShwY5zefIxp5iIMVAIemhh7A== --account-name jhustorageacct --name jhublob --file /c/cygwin64/home/epgbuwm/homework/week6/storage_table_demo.py
+
+
+git clone https://github.com/jjhumck19/week6/storage_table_demomy.py
